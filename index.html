@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/pokeball.png" type="image/x-icon">
+</head>
+
+<body id="body" onload="init()">
+    <header>
+        <div class="header-left">
+            <img src="./img/pokeball.png" alt="Pokemon Logo">
+            <span>Pokedex</span>
+        </div>
+        <input placeholder="Search Pokemon" id="search" onkeydown="filterNames()">
+    </header>
+    <div class="content" id="content">
+
+    </div>
+    <div class="btn-container">
+        <button id="loadmore-btn" onclick="loadMoreChar()">Load more</button>
+    </div>
+
+    <div onclick="closeCharacter()" id="open-character" class="d-none">
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer">
+            <img src="./img/pokeball.png">
+            <span onclick="reloadPage()">Pokemon</span>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/safeData.js"></script>
+    <script src="./js/pushInArray.js"></script>
+    <script src="./js/renderHtml.js"></script>
+</body>
+
+</html>
